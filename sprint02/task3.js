@@ -6,7 +6,7 @@
 // maxInterv(3); //0
 
 const maxInterv = (...arg) => {
-    returnarg.reduce((acc, currentValue, index, array) => {
+    return arg.reduce((acc, currentValue, index, array) => {
         let interval = array[index - 1] - currentValue;
         if (interval < 0)
             interval = -interval;
