@@ -1,8 +1,12 @@
-// The function takes any number of strings and returns the sum of their lengths.
-// Example:
-// console.log(sumOfLen('hello', 'hi')); //7
-// console.log(sumOfLen('hi')); //2
-// console.log(sumOfLen()); //0
-// console.log(sumOfLen('hello', 'hi', 'my name', 'is')); //16
+// Please, implement a function combineFunctions that takes any number of functions as an argument and returns a function that is a composition of the arguments.
+// For example:
+// negate = function(x){ return -x; };
+// halve = function(x){ return x / 2; };
+// square = function(x){ return x * x; };
+// double = function(x){ return 2 * x; };
+// combineFunctions(negate, halve, square) should return a function
+// square(halve(negate(x)))
+// combineFunctions(negate, double) should return a function
+// double(negate(x)))
 
 const combineFunctions = (...all) => x => all.reduce((a, b) => b(a), x);
