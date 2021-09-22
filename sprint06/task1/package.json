@@ -1,0 +1,17 @@
+{
+  "name": "webui-marathon",
+  "version": "1.0.0",
+  "dependencies": {"bootstrap": "^5.1.1"},
+  "devDependencies" : {"typescript": "^4.4.3"},
+  "scripts": {
+    "task1": "node script1.js",
+    "task2": "node script2.js"
+  },
+  "author": "IT Academy"
+}
+
+//There is the file package.json
+//Configure it to specify:
+//List bootstrap as a production dependency
+//List typescript as a dev dependency
+//Define two custom scripts - task1 runs the file script1.js and task2 runs the file script2.js
