@@ -1,5 +1,3 @@
-const getLanguages = (...all) => all.reduce((a, b) => a.filter(b)).map((x) => x.languages).flat();
-
 // Suppose, you have an array of students:
 // let students = [{
 //   name: 'Anna',
@@ -26,3 +24,5 @@ const getLanguages = (...all) => all.reduce((a, b) => a.filter(b)).map((x) => x.
 // getLanguages(students) should return
 // ['English', 'Ukrainian','Polish', 'Spanish', 'Italian', 'Russian']
 // Try to use reduce and not use loops to solve this task. 
+
+const getLanguages = (...all) => all.reduce((a, b) => a.filter(b)).map((x) => x.languages).flat();
